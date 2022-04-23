@@ -30,14 +30,13 @@ const circulo = (x, y) => {
 }
 
 const triangulo = () => {
-    ctx.fillStyle = "green"
-    ctx.fillRect(10, 10, 500, 100)
+    ctx.beginPath()
+    ctx.moveTo(200, 50)
+    ctx.lineTo(100, 200)
+    ctx.lineTo(300, 200)
 
-    ctx.lineWidth = 6
-    ctx.stokeStyle = "rgba(255, 0, 255, 1)"
-
-    ctx.rect(10, 10, 500, 100)
-    ctx.stroke()
+    ctx.fillStyle = 'yellow'
+    ctx.fill()
 }
 
 //rectangulo
@@ -48,6 +47,8 @@ cuadradoYrectangulo(10, 10, 180, 180, '#E37777', '#E37777')
 
 //circulo
 circulo(110, 360)
+
+triangulo()
 
 
 
