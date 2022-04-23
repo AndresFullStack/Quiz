@@ -41,10 +41,10 @@ const triangulo = () => {
 }
 
 //rectangulo
-cuadradoYrectangulo(480, 330, 500, 150, 'red', 'red')
+cuadradoYrectangulo(480, 330, 500, 150, 'green', 'green')
 
 //cuadrado
-cuadradoYrectangulo(10, 10, 180, 180, 'green', 'green')
+cuadradoYrectangulo(10, 10, 180, 180, '#E37777', '#E37777')
 
 //circulo
 circulo(110, 360)
