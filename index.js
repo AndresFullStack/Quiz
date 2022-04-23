@@ -21,7 +21,7 @@ const cuadradoYrectangulo = (x, y, w, h, colorC, colorS) => {
 const circulo = (x, y) => {
 
     ctx.beginPath()
-    ctx.arc(x, y, 80, 0, 2 * Math.PI)
+    ctx.arc(x, y, 100, 0, 2 * Math.PI)
     ctx.fillStyle = 'cyan'
     ctx.fill()
     ctx.lineWidth = 6
@@ -47,7 +47,7 @@ cuadradoYrectangulo(480, 330, 500, 150, 'red', 'red')
 cuadradoYrectangulo(10, 10, 180, 180, 'green', 'green')
 
 //circulo
-circulo(100, 330)
+circulo(110, 360)
 
 
 
