@@ -8,24 +8,24 @@ const cuadradoYrectangulo = (x, y, w, h, colorC, colorS) => {
     ctx.fillStyle = colorC
     ctx.fillRect(x, y, w, h)
 
-    ctx.lineWidth = 6
-    ctx.stokeStyle = colorS
+    // ctx.lineWidth = 6
+    // ctx.stokeStyle = colorS
 
     //se puede ahorrar una linea de codigo con esta funcion strokeRect
-    ctx.rect(x, y, w, h)
+    // ctx.rect(x, y, w, h)
 
-    ctx.stroke()
-        // ctx.beginPath()
+    // ctx.stroke()
+    // ctx.beginPath()
 }
 
-const circulo = () => {
+const circulo = (x, y) => {
 
     ctx.beginPath()
-    ctx.arc(300, 300, 80, 0, 2 * Math.PI)
-    ctx.fillStyle = 'green'
+    ctx.arc(x, y, 80, 0, 2 * Math.PI)
+    ctx.fillStyle = 'cyan'
     ctx.fill()
     ctx.lineWidth = 6
-    ctx.strokeStyle = 'purple'
+    ctx.strokeStyle = 'cyan'
     ctx.stroke()
 }
 
@@ -47,7 +47,7 @@ cuadradoYrectangulo(480, 330, 500, 150, 'red', 'red')
 cuadradoYrectangulo(10, 10, 180, 180, 'green', 'green')
 
 //circulo
-circulo()
+circulo(100, 330)
 
 
 
